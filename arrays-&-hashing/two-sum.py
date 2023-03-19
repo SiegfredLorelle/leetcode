@@ -10,7 +10,6 @@ not use the same element twice.
 You can return the answer in any order.
 """
 
-2
 class Solution:
     def twoSum(self, nums: list[int], target: int) -> list[int]:
         hash = {}

@@ -2,5 +2,7 @@ Array and Hashing
 - Product of an Array Except Self (Medium)
 - Valid Sudoku (Medium)
 - Longest Consecutive Sequence (Medium)
+- Encode and Decode Strings (Medium)
+
 
 

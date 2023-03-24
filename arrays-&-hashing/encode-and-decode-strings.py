@@ -11,9 +11,6 @@ Please implement encode and decode
 
 
 class Solution:
-    """ UNTESTED CODE """
-
-    
     """
     @param: strs: a list of strings
     @return: encodes a list of strings to a single string.
@@ -23,33 +20,31 @@ class Solution:
         res = ""
         for word in strs:
             res += f"{len(word)}:{word}"
-
         return res
 
 
     """
     @param: str: A string
-    @return: dcodes a single string to a list of strings
+    @return: decodes a single string to a list of strings
     """
     def decode(self, str):
         # write your code here
+        res = []
+        i = 0 # char pointer
+        j = 0 # word length pointer
 
-        strs = []
-        word_length = ""
-        i = 0
-        while True:
-            if str[i].is_digit():
-                word_length += str[i]
+        while i < len(str):
+            if str[i] != ":":
+                i += 1
 
-                if str[i + 1] == ":":
-                    word = ""
-                    i += 2
-                    for j in str[i: i + word_length]:
-                        word += j
-                    strs.append(word)
-                    i += word_length
+            else:
+                word_length = int(str[j : i])
+                res.append(str[i + 1 : i + 1 + word_length])
+                i += word_length + 1
+                j = i
+        return res
 
-        return strs
+
 
 
 sol = Solution()

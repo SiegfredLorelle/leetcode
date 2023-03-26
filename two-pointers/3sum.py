@@ -37,6 +37,8 @@ class Solution:
                         l += 1
         return res
 
+
+
 sol = Solution()
 result = sol.threeSum([-1,0,1,2,-1,-4])
 print(result)

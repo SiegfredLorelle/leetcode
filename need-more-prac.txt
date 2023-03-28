@@ -8,3 +8,4 @@ Array and Hashing
 Two Pointers
 - Valid Palindrome (Easy)
 - Two Sums II - Input Array is Sorted (Easy)
+- Trapping Rain Water (Hard)

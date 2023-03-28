@@ -40,7 +40,7 @@ class Solution:
                     if  trapped_area > 0:
                         total_trapped_area += trapped_area  
                 # # OR USE MAX BUILT-IN FUNC (SLIGHTLY SLOWER BUT MORE READABLE)
-                # max_left = max(max_right, height[r])
+                # max_right = max(max_right, height[r])
                 # total_trapped_area += max_right - height[r]
 
         return total_trapped_area

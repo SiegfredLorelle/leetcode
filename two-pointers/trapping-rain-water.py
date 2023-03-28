@@ -9,10 +9,6 @@ compute how much water it can trap after raining.
 class Solution:
     def trap(self, height: list[int]) -> int:
 
-        """
-        SOLUTION USING TWO POINTERS 
-        (better than hash bc this O(1) memory, no hash set which takes memory)
-        """
         if len(height) <= 2:
             return 0
 

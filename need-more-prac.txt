@@ -9,3 +9,6 @@ Two Pointers
 - Valid Palindrome (Easy)
 - Two Sums II - Input Array is Sorted (Easy)
 - Trapping Rain Water (Hard)
+
+Stack
+- Min Stack (Medium)

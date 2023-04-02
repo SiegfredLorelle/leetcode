@@ -14,3 +14,4 @@ Stack
 - Min Stack (Medium)
 - Evaluate Reverse Polish Notation (Medium)
 - Generate Parentheses (Medium)
+- Daily Temperatures (Medium)

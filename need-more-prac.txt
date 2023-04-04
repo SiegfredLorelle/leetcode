@@ -16,3 +16,4 @@ Stack
 - Generate Parentheses (Medium)
 - Daily Temperatures (Medium)
 - Car Fleet (Medium)
+- Largest Rectangle in Histogram (Hard)

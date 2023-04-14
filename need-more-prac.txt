@@ -1,19 +1,12 @@
 Array and Hashing
-- Product of an Array Except Self (Medium)
-- Valid Sudoku (Medium)
 - Longest Consecutive Sequence (Medium)
 - Encode and Decode Strings (Medium)
 
 
 Two Pointers
-- Valid Palindrome (Easy)
-- Two Sums II - Input Array is Sorted (Easy)
-- Trapping Rain Water (Hard)
+- 
+
 
 Stack
-- Min Stack (Medium)
-- Evaluate Reverse Polish Notation (Medium)
-- Generate Parentheses (Medium)
-- Daily Temperatures (Medium)
 - Car Fleet (Medium)
 - Largest Rectangle in Histogram (Hard)

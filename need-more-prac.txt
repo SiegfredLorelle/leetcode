@@ -8,5 +8,4 @@ Two Pointers
 
 
 Stack
-- Car Fleet (Medium)
 - Largest Rectangle in Histogram (Hard)

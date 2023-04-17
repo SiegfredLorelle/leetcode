@@ -1,6 +1,5 @@
 Array and Hashing
 - Longest Consecutive Sequence (Medium)
-- Encode and Decode Strings (Medium)
 
 
 Two Pointers

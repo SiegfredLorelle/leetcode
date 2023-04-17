@@ -28,6 +28,7 @@ class Solution:
     @return: decodes a single string to a list of strings
     """
     def decode(self, str):
+        """ SOLUTION USING STRING SLICING """
         # write your code here
         res = []
         i = 0 # char pointer
@@ -43,6 +44,25 @@ class Solution:
                 i += word_length + 1
                 j = i
         return res
+    
+
+        """ SOLUTION USING FOR LOOP """
+        # str_word_length = ""
+        # word_length = 0
+        # word = ""
+        # strs = []
+        # for i in range(len(str)):
+        #     if word_length:
+        #         word += str[i]
+        #         word_length -= 1
+        #         if not word_length:
+        #             strs.append(word)
+        #             word = ""
+        #     elif str[i] == "~":
+        #         word_length = int(str_word_length)
+        #         str_word_length = ""
+        #     else:
+        #         str_word_length += str[i]
 
 
 

@@ -9,3 +9,4 @@ Stack
 
 Sliding Window
 - Longest Substring Without Repeating Characters
+- Longest Repeating Character Replacement

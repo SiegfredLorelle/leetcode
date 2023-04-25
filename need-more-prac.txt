@@ -12,3 +12,4 @@ Sliding Window
 - Longest Repeating Character Replacement
 - Permutation in String
 - Minimum Window Substring
+- Sliding Window Maximum

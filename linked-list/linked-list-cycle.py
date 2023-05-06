@@ -42,7 +42,17 @@ class Solution:
 
         
         # """Solution using two pointers (O(1) memory)"""
-        slow, fast =1
+        slow = head
+        fast = head
+
+        while fast and fast.next:
+            fast = fast.next.next
+            slow = slow.next
+            if slow == fast:
+                return True
+
+        return False
+
 
 
 class LinkedList:

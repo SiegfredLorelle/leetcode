@@ -8,7 +8,6 @@ Stack
 - 
 
 Sliding Window
-- Longest Repeating Character Replacement
 - Minimum Window Substring
 
 Linked List

@@ -15,5 +15,5 @@ Linked List
 - Remove Nth Node From End of List (1)
 - Find the Duplicate Number (1)
 - LRU Cache (1)
-- Merge k Sorted Lists
+- Merge k Sorted Lists (1)
 - Reverse Nodes in k-Group

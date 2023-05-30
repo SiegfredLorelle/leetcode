@@ -11,7 +11,6 @@ Sliding Window
 - 
 
 Linked List
-- Reorder Linked List (1)
 - Remove Nth Node From End of List (1)
 - Find the Duplicate Number (1)
 - LRU Cache (1)

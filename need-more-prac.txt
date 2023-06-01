@@ -11,6 +11,5 @@ Sliding Window
 - 
 
 Linked List
-- Find the Duplicate Number (1)
 - LRU Cache (1)
 - Merge k Sorted Lists (1)

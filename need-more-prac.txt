@@ -13,3 +13,6 @@ Sliding Window
 Linked List
 - LRU Cache (1)
 - Merge k Sorted Lists (1)
+
+Binary Search
+- 

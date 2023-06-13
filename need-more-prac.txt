@@ -17,3 +17,4 @@ Binary Search
 - Binary Search
 - Search a 2D Matrix
 - Koko Eating Bananas
+- Search in Rotated Sorted Array

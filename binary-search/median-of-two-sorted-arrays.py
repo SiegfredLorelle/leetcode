@@ -71,5 +71,5 @@ class Solution:
 
 
 sol = Solution()
-result = sol.findMedianSortedArrays(nums1=[1,2], nums2=[3,4])
+result = sol.findMedianSortedArrays(nums1g=[1,2], nums2=[3,4])
 print(result)

@@ -14,7 +14,6 @@ Linked List
 - 
 
 Binary Search
-- Koko Eating Bananas
 - Search in Rotated Sorted Array
 - Time Based Key-Value Store
 - Median of Two Sorted Arrays

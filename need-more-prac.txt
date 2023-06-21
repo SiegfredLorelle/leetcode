@@ -15,5 +15,4 @@ Linked List
 
 Binary Search
 - Search in Rotated Sorted Array (1)
-- Time Based Key-Value Store
 - Median of Two Sorted Arrays

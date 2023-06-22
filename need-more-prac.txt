@@ -15,4 +15,4 @@ Linked List
 
 Binary Search
 - Search in Rotated Sorted Array (1)
-- Median of Two Sorted Arrays
+- Median of Two Sorted Arrays (1)

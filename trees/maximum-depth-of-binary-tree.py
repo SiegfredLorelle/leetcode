@@ -20,7 +20,6 @@ from typing import Optional
 class Solution:
     """Solution using iterative DFS (depth-first search) using class"""
     def maxDepth(self, root: Optional[TreeNode]) -> int:
-
         # Create a class to access instance attributes 
         # (global variable if no classes) during recursion
         class MaxDepth:
@@ -45,6 +44,15 @@ class Solution:
         instance = MaxDepth() 
         instance.traverse(root, 0)
         return instance.max_depth
+
+
+    """Simplified Solution using recursive DFS (depth-first search)"""
+    def maxDepth(self, root: Optional[TreeNode]) -> int:
+        # Base case
+        if not root:
+            return 0
+
+        return 1 + max(self.maxDepth(root.left), self.maxDepth(root.right))
     
 
 

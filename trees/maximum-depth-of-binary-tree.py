@@ -17,8 +17,9 @@ class TreeNode:
 
 from typing import Optional
 from collections import deque
+
 class Solution:
-    """Solution using iterative DFS (depth-first search) using class"""
+    """Solution using recursive DFS (depth-first search) using class"""
     def maxDepth(self, root: Optional[TreeNode]) -> int:
         # Create a class to access instance attributes 
         # (global variable if no classes) during recursion
@@ -74,6 +75,26 @@ class Solution:
             level += 1
 
         return level
+
+
+    """Solution using iterative DFS (depth-first search) using stack"""
+    def maxDepth(self, root: Optional[TreeNode]) -> int:
+        # Traverse in BDF while keeping track of depth
+        max_depth = 0
+        stack = [(root, 1)]
+        while stack:
+            node, depth = stack.pop()
+
+            if node:
+                # Update max depth if new depth is higher
+                if max_depth < depth:
+                    max_depth = depth
+                # Add the children of the popped node
+                stack.append((node.left, depth + 1))
+                stack.append((node.right, depth + 1))
+
+        return max_depth
+
 
 
 # Only purpose is to create a tree from a python list for test cases

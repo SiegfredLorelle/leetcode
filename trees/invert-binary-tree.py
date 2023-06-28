@@ -26,7 +26,6 @@ class TreeNode:
                 current = prev.left
 
         return new_list
-            
 
 
 

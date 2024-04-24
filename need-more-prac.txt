@@ -16,3 +16,4 @@ Linked List
 Binary Search
 - Invert Binary Tree
 - Maximum Depth of Binary Tree
+- Diameter of a Binary Tree

@@ -19,3 +19,5 @@ Binary Search
 - Diameter of a Binary Tree
 - Balanced Binary Tree
 - Same Tree
+- Subtree of Another Tree (didn't finish in time)
+- Lowest Common Ancestor of a Binary Search Tree (didn't finish in time, unoptimized sol)

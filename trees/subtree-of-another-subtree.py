@@ -8,7 +8,7 @@ all of this node's descendants. The tree tree could also be considered as
 a subtree of itself.
 """
 
-from typings import *
+from typing import *
 
 # Definition for a binary tree node.
 class TreeNode:

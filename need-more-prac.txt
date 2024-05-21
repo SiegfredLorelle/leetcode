@@ -24,3 +24,4 @@ Binary Search
 - Binary Tree Level Order Traversal (didn't finish in time (by 2 mins))
 - Binary Tree Right Side View
 - Count Good Nodes In Binary Tree (didn't finish in time (by 15 secs), unoptimized sol)
+- Validate Binary Search Tree (wasn't able to come up with sol on my own)

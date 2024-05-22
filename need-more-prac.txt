@@ -25,3 +25,4 @@ Binary Search
 - Binary Tree Right Side View
 - Count Good Nodes In Binary Tree (didn't finish in time (by 15 secs), unoptimized sol)
 - Validate Binary Search Tree (wasn't able to come up with sol on my own)
+- Kth Smallest Element in a BST (unoptimized sol)

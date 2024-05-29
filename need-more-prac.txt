@@ -31,3 +31,4 @@ Trees
 - Kth Smallest Element in a BST (unoptimized sol)
 - Construct Binary Tree from Preorder and Inorder Traversal (wasn't able to come up with sol on my own)
 - Binary Tree Maximum Path Sum
+- Serialize And Deserialize Binary Tree (didn't finish in time (took 2 hrs))

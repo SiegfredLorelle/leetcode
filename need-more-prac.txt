@@ -17,9 +17,6 @@ Binary Search
 - 
 
 Trees
-- Invert Binary Tree
-- Maximum Depth of Binary Tree
-- Diameter of a Binary Tree
 - Balanced Binary Tree
 - Same Tree
 - Subtree of Another Tree (didn't finish in time)

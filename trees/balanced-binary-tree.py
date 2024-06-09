@@ -17,40 +17,22 @@ class TreeNode:
 
 class Solution:
     def isBalanced(self, root: Optional[TreeNode]) -> bool:
-        isBalanced = True
-        
-        def dfs(node: TreeNode) -> int:
-            # Base case
-            if not node:
+        self.isBalanced = True
+
+        def DFS(node):
+            if not node or not self.isBalanced:
                 return 0
 
-            # Perform DFS on both left and right nodes if it exists
-            # dfs(node) returns the height of that subtree/child node
-            leftHeight = 0
-            rightHeight = 0
-            if node.left:
-                leftHeight = dfs(node.left)
-            if node.right:
-                rightHeight = dfs(node.right)
-
-            # Alternative way of writing getting the absolute value (abs())
-            heightDiff = leftHeight - rightHeight
-            if heightDiff < 0:
-                heightDiff *= -1
+            leftMax = DFS(node.left)
+            rightMax = DFS(node.right)
             
-            # Node is not balanced if height difference is more than 1 
+            heightDiff = abs(leftMax - rightMax)
+            
             if heightDiff > 1:
-                nonlocal isBalanced
-                isBalanced = False
+                self.isBalanced = False
+            
+            return max(leftMax, rightMax) + 1
 
-            # Get the bigger height between left and right subtree/ child node
-            # Alternative way of getting the bigger value between two (max(leftHeight, rightHeight))
-            biggerHeight = leftHeight
-            if rightHeight > leftHeight:
-                biggerHeight = rightHeight
 
-            # Return the height of this node
-            return biggerHeight + 1
-
-        dfs(root)
-        return isBalanced
+        DFS(root)
+        return self.isBalanced

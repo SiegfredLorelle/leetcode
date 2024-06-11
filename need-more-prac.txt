@@ -17,8 +17,6 @@ Binary Search
 - 
 
 Trees
-- Balanced Binary Tree
-- Same Tree
 - Subtree of Another Tree (didn't finish in time)
 - Lowest Common Ancestor of a Binary Search Tree (didn't finish in time, unoptimized sol)
 - Binary Tree Level Order Traversal (didn't finish in time (by 2 mins))

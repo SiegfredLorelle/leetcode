@@ -17,29 +17,26 @@ class TreeNode:
 
 class Solution:
     def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
-        isSame = True
+        self.isSameTree = True
 
-        def dfs(pNode: Optional[TreeNode], qNode: Optional[TreeNode]) -> None:
-            nonlocal isSame
+        def DFS(node1, node2):
+            if not self.isSameTree:
+                return 
 
-            if not isSame:
+            if not node1 and not node2:
                 return
 
-            if not pNode and not qNode:
+            if (node1 and not node2) or (not node1 and node2):
+                self.isSameTree = False
                 return
 
-            if (not pNode and qNode) or (pNode and not qNode):
-                isSame = False
+            if node1.val != node2.val:
+                self.isSameTree = False
                 return
 
-            if (pNode.val != qNode.val):
-                isSame = False
-                return
-            
-            dfs(pNode.left, qNode.left)
-            dfs(pNode.right, qNode.right)
+            DFS(node1.left, node2.left)
+            DFS(node1.right, node2.right)
 
-        dfs(p, q)
-        return isSame
 
-        
+        DFS(p, q)
+        return self.isSameTree

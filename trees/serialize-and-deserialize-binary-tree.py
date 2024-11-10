@@ -32,20 +32,17 @@ class Codec:
         :type root: TreeNode
         :rtype: str
         """
-        self.serializedString = ""
-
+        self.vals = []
         def dfs(node):
             if not node:
-                self.serializedString += "E,"
+                self.vals.append("E")
                 return
-            else:
-                self.serializedString += f"{node.val},"
-
-            dfs(node.left)
-            dfs(node.right)
+            self.vals.append(str(node.val))
+            dfs(node.left) 
+            dfs(node.right) 
 
         dfs(root)
-        return self.serializedString
+        return ",".join(self.vals)
 
         
 
@@ -55,31 +52,19 @@ class Codec:
         :type data: str
         :rtype: TreeNode
         """
-        start = TreeNode("E")
-        currNode = start
-        toRight = False
-        passed = []
-
-        dataAsArr = data.split(",")
-        for num in dataAsArr:
-            if num == "E":
-                if not passed:
-                    break
-                currNode = passed.pop()
-                toRight = True
+        vals = data.split(",")
+        self.i = -1
+        def dfs():
+            self.i += 1
+            if vals[self.i] == "E":
+                return
+            node = TreeNode(int(vals[self.i]))
+            node.left = dfs()
+            node.right = dfs()
+            return node
         
-            else:
-                newNode = TreeNode(num)
-                if not toRight:
-                    currNode.left = newNode
-                else:
-                    currNode.right = newNode
-                toRight = False
-                currNode = newNode
-                passed.append(currNode)
-
-
-        return start.left
+        root = dfs()
+        return root
 
 
         

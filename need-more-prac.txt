@@ -17,13 +17,7 @@ Binary Search
 - 
 
 Trees
-- Subtree of Another Tree (didn't finish in time)
-- Lowest Common Ancestor of a Binary Search Tree (didn't finish in time, unoptimized sol)
-- Binary Tree Level Order Traversal (didn't finish in time (by 2 mins))
-- Binary Tree Right Side View
-- Count Good Nodes In Binary Tree (didn't finish in time (by 15 secs), unoptimized sol)
-- Validate Binary Search Tree (wasn't able to come up with sol on my own)
-- Kth Smallest Element in a BST (unoptimized sol)
-- Construct Binary Tree from Preorder and Inorder Traversal (wasn't able to come up with sol on my own)
-- Binary Tree Maximum Path Sum
-- Serialize And Deserialize Binary Tree (didn't finish in time (took 2 hrs))
+- 
+
+Tries
+- Implement Trie (Prefix Tree) - (unoptimized sol, didn't finish in time by 3 mins)

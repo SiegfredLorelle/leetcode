@@ -1,3 +1,10 @@
+""" Subsets II
+Given an integer array nums that may contain duplicates, 
+return all possible subsets (the power set).
+
+The solution set must not contain duplicate subsets. 
+Return the solution in any order.
+"""
 from typing import List
 
 class Solution:
@@ -16,6 +23,6 @@ class Solution:
                 currSubset.append(nums[curr])
                 dfs(curr + 1)
                 currSubset.pop()
-        
+
         dfs(0)
         return ans

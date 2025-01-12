@@ -15,6 +15,7 @@ Implement the LRUCache class:
 
 The functions get and put must each run in O(1) average time complexity.
 """
+import collections
 
 class Node:
     def __init__(self, key, value):
@@ -23,7 +24,26 @@ class Node:
         self.next = self.prev = None
 
 class LRUCache:
+    """ SOLUTION USING BUILT IN DATA STRUCTURE (ORDERD DICT) """
+    # def __init__(self, capacity: int):
+    #     self.cache = collections.OrderedDict([])
+    #     self.capacity = capacity
 
+    # def get(self, key: int) -> int:
+    #     if key in self.cache:
+    #         self.cache.move_to_end(key)
+    #         return self.cache[key]
+    #     return -1
+
+    # def put(self, key: int, value: int) -> None:
+    #     if key in self.cache:
+    #         self.cache.move_to_end(key)
+    #     self.cache[key] = value
+
+    #     if len(self.cache) > self.capacity:
+    #         self.cache.popitem(last=False)
+
+    """ SOLUTION USING DOUBLY LINKED LIST """
     def __init__(self, capacity: int):
         self.cache = {} # key : node
         self.capacity = capacity
